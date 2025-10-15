@@ -114,34 +114,24 @@ Actual	Predicted	SMAPE
 100	120	18.18%
 
 ## Pipeline Overview
-┌─────────────────────┐
-│ train.csv / images  │
-└────────┬────────────┘
+
+train.csv / images  
          │
          ▼
-┌──────────────────────────────┐
-│ 1️⃣ Text Embeddings (SentenceTransformer) │
-└──────────────────────────────┘
+ 1️⃣ Text Embeddings (SentenceTransformer)
          │
          ▼
-┌──────────────────────┐
-│ 2️⃣ Image Embeddings (EfficientNet-B3) │
-└──────────────────────┘
+ 2️⃣ Image Embeddings (EfficientNet-B3) 
          │
          ▼
-┌─────────────────────┐
-│ 3️⃣ Manual Features │
-└─────────────────────┘
+ 3️⃣ Manual Features 
          │
          ▼
-┌──────────────────────────────┐
-│ 4️⃣ LightGBM / XGBoost / CatBoost │
-└──────────────────────────────┘
+ 4️⃣ LightGBM / XGBoost / CatBoost 
          │
          ▼
-┌─────────────────────┐
-│ Final Ensemble Output │
-└─────────────────────┘
+ Final Ensemble Output 
+
 
 ## How to Reproduce (Google Colab)
 
