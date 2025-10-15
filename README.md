@@ -115,30 +115,7 @@ Actual	Predicted	SMAPE
 
 ## Pipeline Overview
 
-train.csv / images  
-         │
-         ▼
- 1️⃣ Text Embeddings (SentenceTransformer)
- 
-         │
-         ▼
-
-         
- 2️⃣ Image Embeddings (EfficientNet-B3) 
- 
-         │
-         ▼
-         
- 3️⃣ Manual Features 
- 
-         │
-         ▼
-         
- 4️⃣ LightGBM / XGBoost / CatBoost 
-         │
-         ▼
-         
- Final Ensemble Output 
+<pre> ``` ┌─────────────────────┐ │ train.csv / images │ └────────┬────────────┘ │ ▼ ┌──────────────────────────────┐ │ 1️⃣ Text Embeddings (SentenceTransformer) │ └──────────────────────────────┘ │ ▼ ┌──────────────────────┐ │ 2️⃣ Image Embeddings (EfficientNet-B3) │ └──────────────────────┘ │ ▼ ┌─────────────────────┐ │ 3️⃣ Manual Features │ └─────────────────────┘ │ ▼ ┌──────────────────────────────┐ │ 4️⃣ LightGBM / XGBoost / CatBoost │ └──────────────────────────────┘ │ ▼ ┌─────────────────────┐ │ Final Ensemble Output │ └─────────────────────┘ ``` </pre>
 
 
 ## How to Reproduce (Google Colab)
